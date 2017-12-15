@@ -3,7 +3,7 @@
 
 ## Unpack the prerequisite tarball and enter directory
 ```bash
-`tar -xzvf libs4cdo-0.0.11.tar.gz`
+tar -xzvf libs4cdo-0.0.11.tar.gz
 cd libs4cdo-0.0.11
 ```
 

@@ -93,7 +93,7 @@ tar -xzvf cdo-1.8.2.tar.gz
 
 ### Install CDO
 ```bash
-cd ../cdo-1.8.2/
+cd cdo-1.8.2/
 ./configure --prefix=$CDODIR --with-netcdf=$CDODIR --with-hdf5=$CDODIR --with-grib_api=$CDODIR --with-proj=$CDODIR
 sudo make all install
 ```

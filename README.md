@@ -2,6 +2,8 @@
 
 ## Part 1 - Installing Prerequisite Libraries
 
+**Note:** make sure you are running these commands from a *user* owned directory like, `~/Downloads/cdo_config_dir/`, the one that I used. Further note, that CDO and all other libraries will be installed in a *root* owned directory so `make all install` must be run by the *superuser*, i.e. `sudo make all install`.
+
 ### Unpack the prerequisite tarball and enter directory
 ```bash
 tar -xzvf libs4cdo-0.0.11.tar.gz

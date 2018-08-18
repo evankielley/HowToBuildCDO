@@ -10,7 +10,7 @@ This guide is tailored for Debian-based Linux distros.
 
 Fortran 77 and 90/95 compilers are required for the installation of the GRIB API and hence, CDO. By default, these may not be installed so if you get no response from `which gfortran` and/or `which fort77`, install them by typing: `sudo apt-get install gfortran` and/or `sudo apt-get install fort77`; appropriately. You will also need the C compilers: gcc and g++.
 
-## Downloading CDO and it's Prerequisites
+## Part 0 - Downloading CDO and it's Prerequisites
 
 This guide is tailored for CDO 1.8.2 and its prerequisite libs. At this time, these can be obtained via:
 

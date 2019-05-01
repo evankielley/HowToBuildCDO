@@ -82,7 +82,7 @@ sudo make all install
 ```bash
 cd ../hdf5-1.8.15/
 ./configure --prefix=$CDODIR --with-zlib=$CDODIR
- sudo make all install
+sudo make all install
 ```
 
 ### Install NetCDF-3
@@ -93,6 +93,8 @@ sudo make all install
 ```
 
 ### Install NetCDF-4
+
+**Note: requires m4. Install with `sudo apt-get install m4`.
 ```bash
 cd ../netcdf-4.3.3.1/
 CPPFLAGS=-I$CDODIR/include LDFLAGS=-L$CDODIR/lib ./configure --prefix=$CDODIR --enable-shared --enable-netcdf-4 --with-pic --disable-doxygen
@@ -127,13 +129,13 @@ sudo make all install
 export PATH=/usr/local/cdo_dir/bin:$PATH
 ```
 
-### Check to ensure `cdo` command works
-```bash
-cdo -V
-```
-
 ### Update bashrc file 
 ```bash
 echo 'PATH=/usr/local/cdo_dir/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
+```
+
+### Check to ensure `cdo` command works
+```bash
+cdo -V
 ```
